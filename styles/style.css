@@ -17,7 +17,7 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   display: flex;
 }
 
@@ -79,6 +79,12 @@ ol {
   gap: 5px;
 }
 
+.search-form__label {
+  width: fit-content;
+  border: none;
+  outline: none;
+}
+
 .search-form__textfield {
   background-color: transparent;
   appearance: none;
@@ -92,8 +98,6 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   min-width: 225px;
-  position: relative;
-  border: none;
 }
 
 .search-form__fieldset-title {
@@ -103,12 +107,6 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.search-form__label {
-  width: fit-content;
-  border: none;
-  outline: none;
 }
 
 .search-form__textfield:focus {
