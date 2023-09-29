@@ -44,8 +44,7 @@ ol {
   display: flex;
   align-items: end;
   gap: 30px;
-  max-width: 1150px;
-  margin: 133px 30px;
+  max-width: 1140px;
 }
 
 .result {
@@ -87,10 +86,10 @@ ol {
   border: none;
   outline: none;
   cursor: pointer;
-  gap:5px;
+  gap: 5px;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -171,7 +170,7 @@ input[type="checkbox"]:checked ~ .search-form__pseudo-checkbox::before {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  gap:15px;
+  gap: 15px;
 }
 
 .visually-hidden {
@@ -224,8 +223,8 @@ input[type="checkbox"]:checked ~ .search-form__pseudo-checkbox::before {
 .content__details {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  gap: 26px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .title {
@@ -257,6 +256,7 @@ input[type="checkbox"]:checked ~ .search-form__pseudo-checkbox::before {
   text-decoration: none;
   color: #fff;
   margin: 2px;
+  padding: 2px 0px 2px 2px;
 }
 
 .content__card-link_current {
@@ -310,9 +310,10 @@ input[type="checkbox"]:checked ~ .search-form__pseudo-checkbox::before {
 }
 
 .content__video-card-thumbnail {
-  width: 194px; 
+  width: 194px;
   height: 103px;
-  object-position: 50% 50%;
+  flex-shrink: 0;
+  object-position: center;
   object-fit: cover;
 }
 
